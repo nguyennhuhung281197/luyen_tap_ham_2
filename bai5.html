@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a  = [];
+    let arr =parseInt(prompt("nhap do dai"));
+    a.length = arr;
+    for (let i = 0 ; i < a.length ; i ++ ){
+        a[i] = parseInt(prompt("nhap phan tu"))
+    }
+    check()
+    function check() {
+        let min = a[0]
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] < min) {
+                min = a[i];
+            }
+        }
+        alert("so nho nhat la " + min);
+    }
+
+
+</script>
+</body>
+</html>
